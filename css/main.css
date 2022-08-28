@@ -1,0 +1,1349 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,300;1,500&display=swap");
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  font-family: Roboto, sans-serif;
+}
+#header .header-top {
+  color: #6c6F72;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  background-color: #292929;
+  padding: 10px 0;
+}
+#header .header-top .top-left .trend {
+  font-size: 13px;
+  color: #ffffff;
+  position: relative;
+  margin-right: 22px;
+}
+#header .header-top .top-left .trend::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 2%;
+  height: 15px;
+  right: -15px;
+  top: 0;
+}
+#header .header-top .top-left .trend i {
+  color: white;
+  font-size: 0.75rem;
+  background-image: linear-gradient(#0034c2, #2962ff);
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+#header .header-top .top-left .newsan {
+  font-size: 13px;
+  color: white;
+}
+#header .header-top .top-left .newsan i {
+  font-size: 8px;
+  padding: 5px;
+  color: #656565;
+}
+#header .header-top .top-right {
+  width: 35%;
+  display: flex;
+  align-items: center;
+}
+#header .header-top .top-right i {
+  color: white;
+  padding: 10px;
+}
+#header .header-top .top-right .sunday {
+  color: #A5A6AA;
+  font-size: 12px;
+  margin-right: 30px;
+  position: relative;
+}
+#header .header-top .top-right .sunday::after {
+  content: "";
+  position: absolute;
+  background-color: #474747;
+  width: 2%;
+  height: 18px;
+  right: -15px;
+  top: 0;
+}
+#header .header-top .top-right .follow {
+  color: white;
+}
+#header .header-top .top-right ul li a {
+  color: #BEBDBD;
+  font-size: 16px;
+}
+#header .header-bottom {
+  background-color: white;
+  padding: 20px;
+}
+#header .header-bottom .nav-menu li {
+  padding: 15px 12px 15px 12px;
+  color: black;
+  margin-right: 7px;
+  text-transform: capitalize;
+  position: relative;
+  font-weight: 600;
+  position: relative;
+}
+#header .header-bottom .nav-menu li:hover {
+  color: #2962FF;
+  cursor: pointer;
+}
+#header .header-bottom .nav-menu li:hover i {
+  transform: rotate(180deg);
+}
+#header .header-bottom .nav-menu li:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+#header .header-bottom .nav-menu li:hover .dropdown-menu ul li a:hover {
+  color: #2962FF;
+}
+#header .header-bottom .nav-menu li.active {
+  color: #2962FF;
+  font-weight: bold;
+}
+#header .header-bottom .nav-menu li.banbefore::after, #header .header-bottom .nav-menu li.active::after {
+  content: "";
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  background-color: #2962FF;
+  height: 5px;
+  transition: 0.5s ease-in-out;
+  width: 0%;
+}
+#header .header-bottom .nav-menu li.banbefore::before, #header .header-bottom .nav-menu li.active::before {
+  content: "";
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  background-color: #2962FF;
+  height: 5px;
+  transition: 0.5s ease-in-out;
+  width: 0%;
+}
+#header .header-bottom .nav-menu li.banbefore:hover::after, #header .header-bottom .nav-menu li.active:hover::after {
+  left: 0;
+  width: 50%;
+}
+#header .header-bottom .nav-menu li.banbefore:hover::before, #header .header-bottom .nav-menu li.active:hover::before {
+  width: 50%;
+}
+#header .header-bottom .nav-menu li i {
+  padding: 6px;
+  font-size: 12px;
+  transition: 0.5s ease-in-out;
+}
+#header .header-bottom .nav-menu li .dropdown-menu {
+  display: block;
+  position: absolute;
+  top: 135%;
+  left: 0;
+  border-radius: 10px;
+  padding: 10px 0;
+  opacity: 0;
+  visibility: hidden;
+}
+#header .header-bottom .nav-menu li .dropdown-menu ul li {
+  padding: 10px 25px;
+  white-space: nowrap;
+  position: relative;
+}
+#header .header-bottom .nav-menu li .dropdown-menu ul li::before {
+  content: "";
+  position: absolute;
+  background-color: #2962FF;
+  left: 10px;
+  top: 38%;
+  height: 13px;
+  width: 3%;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+#header .header-bottom .nav-menu li .dropdown-menu ul li:hover::before {
+  opacity: 1;
+}
+#header .header-bottom .nav-menu li .dropdown-menu ul li a {
+  color: black;
+}
+#header .header-bottom .nav-icons i {
+  color: #6C6F72;
+  font-size: 25px;
+  padding: 7px;
+}
+#header .header-bottom .nav-icons i#cart {
+  position: relative;
+}
+#header .header-bottom .nav-icons i#cart .zero {
+  position: absolute;
+  right: -1px;
+  top: -3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #2962ff;
+  color: white;
+  font-size: 0.875rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#four {
+  background: url(../image/element_1.png);
+  background-size: cover;
+  background-color: #F7F7F7;
+  background-position: center center;
+  padding: 45px 0;
+}
+#four .bigsports {
+  position: relative;
+}
+#four .bigsports:hover .number {
+  background-color: blue;
+}
+#four .sportphoto {
+  position: relative;
+}
+#four .sportphoto img {
+  border-radius: 50%;
+}
+#four .sportphoto .number {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #555555;
+  font-size: 0.75rem;
+  color: #fff;
+  font-weight: 500;
+}
+#four .sportphoto .number p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#four .sportright {
+  padding-left: 10px;
+}
+#four .sportright .sports {
+  font-size: 12px;
+  color: gray;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+#four .sportright .sport {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: sans-serif;
+  color: #0F1012;
+  position: relative;
+}
+#four .sportright .sport::before {
+  position: absolute;
+  content: "";
+  bottom: 20px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: 0.3s ease-in-out;
+  background-color: black;
+}
+#four .sportright .sport::after {
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: 0.3s ease-in-out;
+  transition-delay: 200ms;
+  background-color: black;
+}
+#four .sportright .sport:hover::after {
+  width: 100%;
+}
+#four .sportright .sport:hover::before {
+  width: 155%;
+}
+#four .sportright .december {
+  display: block;
+  color: #555555;
+}
+
+#food {
+  padding-top: 80px;
+}
+#food .fashionleft {
+  border-radius: 2%;
+  overflow: hidden;
+}
+#food .fashionleft .fashionphoto {
+  position: relative;
+  transition: 1.6s ease-in-out;
+}
+#food .fashionleft .fashionphoto img {
+  transform: scale(1);
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 2%;
+}
+#food .fashionleft .fashionphoto:hover {
+  transform: scale(1.1);
+}
+#food .fashionleft .fashiontxt {
+  position: absolute;
+  top: 700px;
+  left: 10%;
+}
+#food .fashionleft .fashiontxt .fashion {
+  display: inline-block;
+  margin: 0px 0px 20px;
+  padding: 4px 8px;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #fff;
+  background-color: #FF3385;
+}
+#food .fashionleft .fashiontxt .childhood {
+  display: block;
+  color: white;
+  font-size: 36px;
+  font-family: sans-serif;
+  font-weight: 700;
+  width: 70%;
+  padding-top: 10px;
+  position: relative;
+}
+#food .fashionleft .fashiontxt .childhood::before {
+  position: absolute;
+  content: "";
+  bottom: 60px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: 0.3s ease-in-out;
+  background-color: white;
+}
+#food .fashionleft .fashiontxt .childhood::after {
+  position: absolute;
+  content: "";
+  bottom: 7px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: 0.3s ease-in-out;
+  transition-delay: 200ms;
+  background-color: white;
+}
+#food .fashionleft .fashiontxt .childhood:hover::after {
+  width: 46%;
+}
+#food .fashionleft .fashiontxt .childhood:hover::before {
+  width: 94%;
+}
+#food .fashionleft .by {
+  color: #d0d0d0;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+#food .fashionleft .willum {
+  color: white;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+  transition: 0.3s;
+}
+#food .fashionleft .willum:hover {
+  color: blue;
+}
+#food .fashionleft .fashiondecember {
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #d0d0d0;
+  padding: 50px;
+}
+#food .fashionleft .fashiondecember i {
+  font-size: 16px;
+}
+#food .fashionleft .comment {
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #d0d0d0;
+  padding: 30px;
+}
+#food .fashionright {
+  border-radius: 2%;
+  overflow: hidden;
+}
+#food .fashionright .fashionright1 {
+  padding-bottom: 23px;
+}
+#food .fashionright .fashionright1 .foodphoto {
+  padding: 1px;
+  overflow: hidden;
+  border-radius: 5%;
+  width: 80%;
+  transition: 0.5s ease-in-out;
+}
+#food .fashionright .fashionright1 .foodphoto img {
+  border-radius: 5%;
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+}
+#food .fashionright .fashionright1:hover img {
+  transform: scale(1.1);
+}
+#food .fashionright .fashionright1 .foodtxt {
+  padding-left: 15px;
+}
+#food .fashionright .fashionright1 .foodtxt .food {
+  display: inline-block;
+  color: #fff;
+  font-weight: 700;
+  padding: 1px 4px;
+  margin-left: 5px;
+  background-color: #ffaf25;
+}
+#food .fashionright .fashionright1 .foodtxt .technology {
+  display: inline-block;
+  color: #fff;
+  font-weight: 700;
+  padding: 1px 4px;
+  margin-left: 5px;
+  background-color: #0073ff;
+}
+#food .fashionright .fashionright1 .foodtxt .travel {
+  display: inline-block;
+  color: #fff;
+  font-weight: 700;
+  padding: 1px 4px;
+  margin-left: 5px;
+  background-color: #ff3d00;
+}
+#food .fashionright .fashionright1 .foodtxt .foodspan {
+  padding: 2px;
+}
+#food .fashionright .fashionright1 .foodtxt .foodspan .after {
+  font-size: 20px;
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: 700;
+  position: relative;
+}
+#food .fashionright .fashionright1 .foodtxt .foodspan .after::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  transition: 0.2s ease-in-out;
+  height: 1px;
+  background-color: black;
+  bottom: 0%;
+  left: 0%;
+}
+#food .fashionright .fashionright1 .foodtxt .foodspan .landing {
+  font-size: 20px;
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: 700;
+  position: relative;
+}
+#food .fashionright .fashionright1 .foodtxt .foodspan .landing::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  transition-delay: 900ms;
+  transition: 0.4s ease-in-out;
+  height: 1px;
+  background-color: black;
+  bottom: 2%;
+  left: 0%;
+}
+#food .fashionright .fashionright1 .foodtxt .foodspan .really {
+  font-size: 20px;
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: 700;
+  position: relative;
+}
+#food .fashionright .fashionright1 .foodtxt .foodspan .really::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  transition-delay: 900ms;
+  transition: 0.5s ease-in-out;
+  height: 1px;
+  background-color: black;
+  bottom: 0%;
+  left: 0%;
+}
+#food .fashionright .fashionright1 .foodtxt .foodspan:hover .after::after {
+  width: 100%;
+}
+#food .fashionright .fashionright1 .foodtxt .foodspan:hover .landing::after {
+  width: 100%;
+}
+#food .fashionright .fashionright1 .foodtxt .foodspan:hover .really::after {
+  width: 100%;
+}
+#food .fashionright .fashionright1 .fooddecember {
+  display: block;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #a5a6aa;
+  padding: 5px;
+  font-weight: 500;
+}
+#food .shop-now {
+  padding-bottom: 80px;
+}
+
+#top-stories {
+  height: 83vh;
+  background-color: #fbf8f5;
+  position: relative;
+}
+#top-stories .back-image1 {
+  padding-right: 50px;
+}
+#top-stories .back-image2 {
+  background: url(//image/element_4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 464px;
+  right: 0px;
+  position: absolute;
+}
+#top-stories .topleft {
+  padding-bottom: 40px;
+}
+#top-stories .topleft .top {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+#top-stories .topleft .dot {
+  background-color: blue;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  margin: 5px 0px 0px 10px;
+}
+#top-stories .topleft .line {
+  border: 1px solid #a5a6aa;
+  height: 4px;
+  width: 76%;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+#top-stories .musicleft {
+  padding: 12px;
+}
+#top-stories .musicleft .musicphoto {
+  border-radius: 2%;
+  overflow: hidden;
+}
+#top-stories .musicleft .musicphoto img {
+  transform: scale(1);
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 2%;
+  transition: 0.5s ease-in-out;
+}
+#top-stories .musicleft:hover img {
+  transform: scale(1.1);
+}
+#top-stories .musicleft .musictxt .music {
+  display: block;
+  padding: 15px 0px;
+  color: #7a7e83;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+#top-stories .musicleft .musictxt .space {
+  display: block;
+  color: black;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 700;
+  position: relative;
+}
+#top-stories .musicleft .musictxt .space::before {
+  position: absolute;
+  content: "";
+  bottom: 30px;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  transition: 0.3s ease-in-out;
+  background-color: black;
+}
+#top-stories .musicleft .musictxt .space::after {
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: 0.3s ease-in-out;
+  transition-delay: 200ms;
+  background-color: black;
+}
+#top-stories .musicleft .musictxt .space:hover::after {
+  width: 90%;
+}
+#top-stories .musicleft .musictxt .space:hover::before {
+  width: 85%;
+}
+#top-stories .musicleft .musictxt .by1 {
+  color: #d0d0d0;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+#top-stories .musicleft .musictxt .willium-skeem {
+  color: black;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+  transition: 0.3s;
+}
+#top-stories .musicleft .musictxt .willium-skeem:hover {
+  color: #d0d0d0;
+}
+#top-stories .musicleft .musictxt .decemberr {
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #c2baba;
+  padding-left: 10px;
+}
+#top-stories .musicleft .musictxt .decemberr i {
+  font-size: 16px;
+}
+
+#whats-new {
+  padding-top: 30px;
+}
+#whats-new .whats-left {
+  padding-bottom: 80px;
+}
+#whats-new .whats-left .whats {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+#whats-new .whats-left .dot2 {
+  background-color: blue;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  margin: 5px 0px 0px 10px;
+}
+#whats-new .whats-left .line2 {
+  border: 1px solid #a5a6aa;
+  height: 4px;
+  width: 390px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+#whats-new .world-main {
+  border: 1px solid #929292;
+  border-radius: 5%;
+}
+#whats-new .world-main .worldtext {
+  display: inline-block;
+  padding: 7px 20px;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: white;
+  background-color: #2962FF;
+}
+#whats-new .world-main .traveltxt {
+  display: inline-block;
+  padding: 7px 20px;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #929292;
+}
+#whats-new .world-main .traveltxt:hover {
+  color: white;
+  background-color: #2962FF;
+}
+#whats-new .world-main .foodd {
+  display: inline-block;
+  padding: 7px 20px;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #929292;
+}
+#whats-new .world-main .foodd:hover {
+  color: white;
+  background-color: #2962FF;
+}
+#whats-new .world-main .tech {
+  display: inline-block;
+  padding: 7px 20px;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #929292;
+}
+#whats-new .world-main .tech:hover {
+  color: white;
+  background-color: #2962FF;
+}
+#whats-new .worldleft {
+  border-radius: 1%;
+  overflow: hidden;
+}
+#whats-new .worldleft .worldphoto {
+  position: relative;
+}
+#whats-new .worldleft .worldphoto img {
+  height: 70vh;
+  transform: scale(1);
+  border-radius: 1%;
+  transition: 1.6s ease-in-out;
+}
+#whats-new .worldleft:hover img {
+  transform: scale(1.1);
+}
+#whats-new .worldleft .worldtxt {
+  position: absolute;
+  top: 320%;
+  left: 10%;
+}
+#whats-new .worldleft .worldtxt .world-a {
+  display: inline-block;
+  padding: 4px;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #fff;
+  background-color: #FFAF25;
+}
+#whats-new .worldleft .worldtxt .african {
+  display: block;
+  color: white;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 800;
+  width: 70%;
+  position: relative;
+}
+#whats-new .worldleft .worldtxt .african::before {
+  position: absolute;
+  content: "";
+  bottom: 40px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: 0.3s ease-in-out;
+  background-color: white;
+}
+#whats-new .worldleft .worldtxt .african::after {
+  position: absolute;
+  content: "";
+  bottom: 5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: 0.3s ease-in-out;
+  transition-delay: 200ms;
+  background-color: white;
+}
+#whats-new .worldleft .worldtxt .african:hover::after {
+  width: 52%;
+}
+#whats-new .worldleft .worldtxt .african:hover::before {
+  width: 94%;
+}
+#whats-new .worldleft .worldtxt .byy {
+  color: #d0d0d0;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+#whats-new .worldleft .worldtxt .willumm {
+  color: white;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+  transition: 0.3s;
+}
+#whats-new .worldleft .worldtxt .willumm:hover {
+  color: blue;
+}
+#whats-new .worldleft .worldtxt .fashiondecemberr {
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #d0d0d0;
+  padding: 50px;
+}
+#whats-new .worldleft .worldtxt .fashiondecemberr i {
+  font-size: 16px;
+}
+#whats-new .worldleft .worldtxt .commentt {
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #d0d0d0;
+  padding: 30px;
+}
+#whats-new .worldright .sportrightt {
+  padding-left: 10px;
+}
+#whats-new .worldright .sportrightt .sportss {
+  font-size: 12px;
+  color: gray;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+#whats-new .worldright .sportrightt .sportt {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: sans-serif;
+  color: #0F1012;
+  position: relative;
+}
+#whats-new .worldright .sportrightt .sportt::before {
+  position: absolute;
+  content: "";
+  bottom: 24px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: 0.3s ease-in-out;
+  background-color: black;
+}
+#whats-new .worldright .sportrightt .sportt::after {
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: 0.3s ease-in-out;
+  transition-delay: 200ms;
+  background-color: black;
+}
+#whats-new .worldright .sportrightt .sportt:hover::after {
+  width: 100%;
+}
+#whats-new .worldright .sportrightt .sportt:hover::before {
+  width: 390%;
+}
+#whats-new .worldright .sportrightt .decemberr {
+  display: block;
+  color: gray;
+}
+#whats-new .worldright .bigsportss {
+  position: relative;
+  padding: 7px;
+}
+#whats-new .worldright .bigsportss .sportphotos {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6%;
+}
+#whats-new .worldright .bigsportss .sportphotos img {
+  height: 16vh;
+  border-radius: 10%;
+  transition: 1s ease-in-out;
+}
+#whats-new .worldright .bigsportss .sportphotos .numberr {
+  position: absolute;
+  left: 1;
+  top: 91px;
+  width: 24px;
+  height: 24px;
+  transition: 0.3s ease-in-out;
+  border-radius: 10%;
+  background-color: #fff;
+  font-size: 16px;
+  color: blue;
+  font-weight: 500;
+}
+#whats-new .worldright .bigsportss .sportphotos .numberr p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#whats-new .worldright .bigsportss:hover .numberr {
+  color: white;
+  background-color: blue;
+}
+#whats-new .worldright .bigsportss:hover .sportphotos img {
+  transform: scale(1.2);
+}
+#whats-new .life-style {
+  padding: 30px 0px;
+}
+#whats-new .life-style .life {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+#whats-new .life-style .dot5 {
+  background-color: blue;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  margin: 5px 0px 0px 10px;
+}
+#whats-new .life-style .line5 {
+  border: 1px solid #a5a6aa;
+  height: 4px;
+  width: 790px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+#whats-new .lifeleft {
+  border-radius: 1%;
+  padding: 10px;
+}
+#whats-new .lifeleft .lifeleftphoto {
+  border-radius: 1%;
+  overflow: hidden;
+  position: relative;
+}
+#whats-new .lifeleft .lifeleftphoto img {
+  height: 50vh;
+  width: 100%;
+  transform: scale(1);
+  border-radius: 1%;
+  transition: 1.6s ease-in-out;
+}
+#whats-new .lifeleft:hover img {
+  transform: scale(1.1);
+}
+#whats-new .lifeleft .lifelefttxt {
+  position: absolute;
+  top: 395%;
+  left: 10%;
+}
+#whats-new .lifeleft .lifelefttxt .moon {
+  display: block;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 800;
+  width: 70%;
+  position: relative;
+}
+#whats-new .lifeleft .lifelefttxt .moon::before {
+  position: absolute;
+  content: "";
+  bottom: 30px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: 0.3s ease-in-out;
+  background-color: white;
+}
+#whats-new .lifeleft .lifelefttxt .moon::after {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: 0.3s ease-in-out;
+  transition-delay: 200ms;
+  background-color: white;
+}
+#whats-new .lifeleft .lifelefttxt .moon:hover::after {
+  width: 52%;
+}
+#whats-new .lifeleft .lifelefttxt .moon:hover::before {
+  width: 90%;
+}
+#whats-new .lifeleft .lifelefttxt .byyy {
+  color: #d0d0d0;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+#whats-new .lifeleft .lifelefttxt .willummm {
+  color: white;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+  transition: 0.3s;
+}
+#whats-new .lifeleft .lifelefttxt .willummm:hover {
+  color: blue;
+}
+#whats-new .lifeleft .lifelefttxt .fashiondecemberrr {
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #d0d0d0;
+  padding: 50px;
+}
+#whats-new .lifeleft .lifelefttxt .fashiondecemberrr i {
+  font-size: 16px;
+}
+#whats-new .lifeleft .lifelefttxt .commenttt {
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #d0d0d0;
+  padding: 30px;
+}
+#whats-new .stayconnected {
+  padding-left: 30px;
+  padding-bottom: 70px;
+}
+#whats-new .stayconnected .stay {
+  font-size: 19px;
+  font-family: sans-serif;
+  font-weight: 700;
+  padding-top: 3px;
+}
+#whats-new .stayconnected .dot3 {
+  background-color: blue;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  margin: 5px 0px 0px 10px;
+}
+#whats-new .stayconnected .line3 {
+  border: 1px solid #a5a6aa;
+  height: 4px;
+  width: 88px;
+  margin-left: 14px;
+  margin-top: 5px;
+}
+#whats-new .socialicons .facebook {
+  display: block;
+  background-color: #2c6dd2;
+  margin-left: 30px;
+  margin-top: 30px;
+  padding: 10px 80px 10px 20px;
+  border-radius: 3%;
+}
+#whats-new .socialicons .facebook .icon-f {
+  transition: 0.3s ease-in-out;
+  color: white;
+  background-color: #6994D7;
+  padding: 5px 15px;
+  border-radius: 70%;
+}
+#whats-new .socialicons .facebook .text-fbefore {
+  position: relative;
+  margin-right: 10px;
+  padding: 0px 10px 0px 10px;
+}
+#whats-new .socialicons .facebook .text-fbefore::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 7%;
+  height: 20px;
+  right: 2px;
+  top: 2px;
+}
+#whats-new .socialicons .facebook .fans {
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: white;
+}
+#whats-new .socialicons .facebook:hover .icon-f {
+  background-color: white;
+  color: blue;
+}
+#whats-new .socialicons .twitter {
+  display: block;
+  background-color: #2fafea;
+  margin-left: 30px;
+  margin-top: 30px;
+  padding: 10px 80px 10px 20px;
+  border-radius: 3%;
+}
+#whats-new .socialicons .twitter .icon-t {
+  transition: 0.3s ease-in-out;
+  color: white;
+  background-color: #41b3e8;
+  padding: 5px 15px;
+  border-radius: 70%;
+}
+#whats-new .socialicons .twitter .text-tbefore {
+  position: relative;
+  margin-right: 10px;
+  padding: 0px 10px 0px 10px;
+}
+#whats-new .socialicons .twitter .text-tbefore::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 7%;
+  height: 20px;
+  right: 2px;
+  top: 2px;
+}
+#whats-new .socialicons .twitter .follower {
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: white;
+}
+#whats-new .socialicons .twitter:hover .icon-t {
+  background-color: white;
+  color: #2fafea;
+}
+#whats-new .socialicons .youtube {
+  display: block;
+  background-color: red;
+  margin-left: 30px;
+  margin-top: 30px;
+  padding: 10px 80px 10px 20px;
+  border-radius: 3%;
+}
+#whats-new .socialicons .youtube .icon-y {
+  transition: 0.3s ease-in-out;
+  color: white;
+  background-color: #F1383E;
+  padding: 5px 15px;
+  border-radius: 70%;
+}
+#whats-new .socialicons .youtube .text-ybefore {
+  position: relative;
+  margin-right: 10px;
+  padding: 0px 10px 0px 10px;
+}
+#whats-new .socialicons .youtube .text-ybefore::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 7%;
+  height: 20px;
+  right: 2px;
+  top: 2px;
+}
+#whats-new .socialicons .youtube .subscriber {
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: white;
+}
+#whats-new .socialicons .youtube:hover .icon-y {
+  background-color: white;
+  color: red;
+}
+#whats-new .socialicons .one-drive {
+  display: block;
+  background-color: #ff9656;
+  margin-left: 30px;
+  margin-top: 30px;
+  padding: 10px 80px 10px 20px;
+  border-radius: 3%;
+}
+#whats-new .socialicons .one-drive .icon-o {
+  transition: 0.3s ease-in-out;
+  color: white;
+  background-color: #FF7E2F;
+  padding: 5px 15px;
+  border-radius: 70%;
+}
+#whats-new .socialicons .one-drive .text-obefore {
+  position: relative;
+  margin-right: 10px;
+  padding: 0px 10px 0px 10px;
+}
+#whats-new .socialicons .one-drive .text-obefore::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 7%;
+  height: 20px;
+  right: 2px;
+  top: 2px;
+}
+#whats-new .socialicons .one-drive .subscriber1 {
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: white;
+}
+#whats-new .socialicons .one-drive:hover .icon-o {
+  background-color: white;
+  color: #FF7E2F;
+}
+#whats-new .socialicons .dribbble {
+  display: block;
+  background-color: #eb5189;
+  margin-left: 30px;
+  margin-top: 30px;
+  padding: 10px 80px 10px 20px;
+  border-radius: 3%;
+}
+#whats-new .socialicons .dribbble .icon-d {
+  transition: 0.3s ease-in-out;
+  color: white;
+  background-color: #f872a4;
+  padding: 5px 15px;
+  border-radius: 70%;
+}
+#whats-new .socialicons .dribbble .text-dbefore {
+  position: relative;
+  margin-right: 10px;
+  padding: 0px 10px 0px 10px;
+}
+#whats-new .socialicons .dribbble .text-dbefore::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 7%;
+  height: 20px;
+  right: 2px;
+  top: 2px;
+}
+#whats-new .socialicons .dribbble .subscriber2 {
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: white;
+}
+#whats-new .socialicons .dribbble:hover .icon-d {
+  background-color: white;
+  color: #f872a4;
+}
+#whats-new .popularnews {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+#whats-new .popularnews .popular {
+  font-size: 19px;
+  font-family: sans-serif;
+  font-weight: 700;
+  padding-top: 3px;
+}
+#whats-new .popularnews .dot4 {
+  background-color: blue;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  margin: 5px 0px 0px 10px;
+}
+#whats-new .popularnews .line4 {
+  border: 1px solid #a5a6aa;
+  height: 4px;
+  width: 88px;
+  margin-left: 14px;
+  margin-top: 5px;
+}
+#whats-new .sports3 .bigsports {
+  position: relative;
+  padding: 45px 0px 0px 30px;
+}
+#whats-new .sports3 .bigsports:hover .number {
+  background-color: blue;
+}
+#whats-new .sports3 .sportphoto {
+  position: relative;
+}
+#whats-new .sports3 .sportphoto img {
+  border-radius: 50%;
+}
+#whats-new .sports3 .sportphoto .number {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #555555;
+  font-size: 0.75rem;
+  color: #fff;
+  font-weight: 500;
+}
+#whats-new .sports3 .sportphoto .number p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#whats-new .sports3 .sportright {
+  padding-left: 10px;
+}
+#whats-new .sports3 .sportright .sports {
+  font-size: 12px;
+  color: gray;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+#whats-new .sports3 .sportright .sport {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: sans-serif;
+  color: #0F1012;
+  position: relative;
+}
+#whats-new .sports3 .sportright .sport::before {
+  position: absolute;
+  content: "";
+  bottom: 20px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: 0.3s ease-in-out;
+  background-color: black;
+}
+#whats-new .sports3 .sportright .sport::after {
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: 0.3s ease-in-out;
+  transition-delay: 200ms;
+  background-color: black;
+}
+#whats-new .sports3 .sportright .sport:hover::after {
+  width: 100%;
+}
+#whats-new .sports3 .sportright .sport:hover::before {
+  width: 155%;
+}
+#whats-new .sports3 .sportright .december {
+  display: block;
+  color: #555555;
+}
+#whats-new .newspaper {
+  padding: 40px 30px;
+  position: relative;
+  overflow: visible;
+  box-sizing: border-box;
+  min-height: 1px;
+}
+#whats-new .newspaper .newspaperphoto {
+  display: block;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
